@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  cassandra:
+    image: cassandra:latest
+    container_name: cassandra-container
+    ports:
+      - "9042:9042"
+    environment:
+      - CASSANDRA_CLUSTER_NAME=MyCassandraCluster
+      - CASSANDRA_SEEDS=cassandra
+      - CASSANDRA_USER=mycassandrauser
+      - CASSANDRA_PASSWORD=mypassword
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb-container
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=adminpassword
+      - MONGO_INITDB_DATABASE=mydatabas
+
+  neo4j:
+    image: neo4j:latest
+    container_name: services-container
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      - NEO4J_AUTH=neo4j/neo4jpassword
