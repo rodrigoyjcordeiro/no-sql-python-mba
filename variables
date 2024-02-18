@@ -1,0 +1,8 @@
+ASTRA_DB_ID=269fe34c-5edc-4b18-aacb-ca3b635b0c76
+ASTRA_DB_REGION=europe-west1
+ASTRA_DB_APPLICATION_TOKEN=<{
+  "clientId": "nEZXdhusQFZtHQzLZAnuOdsJ",
+  "secret": "xM.sbB8ElQ2pvSr9HXzTILjGjQ_+fJxKcoZyEb-iPZA1Cex2S.yu07KXP.DpHCkaIQ_WnA6wqH2C_KGSLGGsF16q8oA75J90x-4jJngLHN091kF9FMSDE2Hx25k7qz45",
+  "token": "AstraCS:nEZXdhusQFZtHQzLZAnuOdsJ:8de50c96911b010311625fae510cdb4b5a35b2cacd591c095156dd38b36bc5be"
+}>
+export ASTRA_DB_KEYSPACE=<atividade_nosql>
